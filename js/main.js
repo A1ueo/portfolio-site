@@ -133,9 +133,25 @@ window.addEventListener('scroll', function (e) {
         toTop.style.opacity = 0;
         toTop.style.transform = 'translateX(100px)';
     }
-    setTimeout(function () {
-        toTop.style.opacity = 0;
-        toTop.style.transform = 'translateX(100px)';
-    }, 3000);
+    // setTimeout(function () {
+    //     toTop.style.opacity = 0;
+    //     toTop.style.transform = 'translateX(100px)';
+    // }, 3000);
 
 })
+
+// 모바일용 메뉴
+const btnHamburger = document.querySelector('.btn-hamburger');
+const navEl = document.querySelector('header nav');
+const menuItems = document.querySelectorAll('header nav ul li a');
+
+btnHamburger.addEventListener('click', function () {
+    navEl.classList.toggle('active');
+});
+menuItems.forEach(menuItem => {
+    menuItem.addEventListener('click', function () {
+        navEl.classList.remove('active');
+    });
+});
+
+
