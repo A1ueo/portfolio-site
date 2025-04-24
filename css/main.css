@@ -509,7 +509,7 @@ footer .copyrigt {
         width: 100%;
         /* height: 100%; */
         height: 0;
-        transition: 500ms;
+        transition: 800ms;
         overflow: hidden;
     }
     header nav.active {
