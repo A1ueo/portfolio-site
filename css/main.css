@@ -482,6 +482,9 @@ footer .copyrigt {
 /* 반응형 스타일 */
 @media screen and (max-width: 767px) {
     /* 모바일에서는 화면의 80%만 차지하도록 */
+    html {
+        scroll-behavior: auto;
+    }
     .inner {
         width: 80%;
     }
@@ -492,6 +495,7 @@ footer .copyrigt {
     .title::after {
         width: 60px;
     }
+
     header .btn-hamburger {
         display: block;
     }
@@ -523,6 +527,15 @@ footer .copyrigt {
     }
     header nav ul li a:hover {
         letter-spacing: 10px;
+    }
+
+.visual > .inner {
+    font-size: 60px;
+}
+
+    .contact .contact__info li {
+        width: 70%;
+        margin: 0 auto;
     }
 }
 /* 반응형 스타일 */
