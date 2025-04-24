@@ -579,10 +579,10 @@ footer .copyrigt {
 
 #modal .modal-content, 
 #imageModal .modal-content {
-    /* width: 80%; */
+    width: 80%;
 }
 #imageModal .modal-body img {
-    /* width: 100%; */
+    width: 100%;
 }
 
 /* 반응형 스타일 */
