@@ -253,6 +253,8 @@ header .btn-hamburger .material-symbols-outlined {
     display: flex;
     justify-content: space-evenly;
     text-align: center;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 /* 하위 선택자가 아닌 자식 선택자 쓴 것에 유의! */
 .skill .skill__list > li {
@@ -481,10 +483,10 @@ footer .copyrigt {
 
 /* 반응형 스타일 */
 @media screen and (max-width: 767px) {
-    /* 모바일에서는 화면의 80%만 차지하도록 */
     html {
         scroll-behavior: auto;
     }
+    /* 모바일에서는 화면의 80%만 차지하도록 */
     .inner {
         width: 80%;
     }
@@ -528,16 +530,61 @@ footer .copyrigt {
     header nav ul li a:hover {
         letter-spacing: 10px;
     }
+    
+    .visual > .inner {
+        font-size: 60px;
+    }
 
-.visual > .inner {
-    font-size: 60px;
-}
+    .about {
+        padding: 100px 0;
+    }
+    .about .about__wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about .about__wrapper .about__image, 
+    .about .about__wrapper .about__text {
+        width: 100%;
+        text-align: center;
+    }
 
-    .contact .contact__info li {
+    .skill {
+        padding: 100px 0;
+    }
+    /* 구간별로 열 정렬 */
+    
+    .project {
+        padding: 100px 0;
+    }
+    .project .port {
+        flex-direction: column;
+        margin: 40px 0;
+    }
+    .project .port .port__image,
+    .project .port .port__text {
+        width: 100%;
+    }
+    .project .port .port__text {
+        padding: 20px 0 0;
+    }
+
+    .contact {
+        padding: 200px 0;
+    }
+    /* .contact .contact__info li {
         width: 70%;
         margin: 0 auto;
-    }
+    } */
 }
+
+#modal .modal-content, 
+#imageModal .modal-content {
+    /* width: 80%; */
+}
+#imageModal .modal-body img {
+    /* width: 100%; */
+}
+
 /* 반응형 스타일 */
 
 /* 애니메이션 정의는 맨 마지막에 */
