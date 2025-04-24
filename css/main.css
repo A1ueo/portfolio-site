@@ -484,7 +484,7 @@ footer .copyrigt {
 /* 반응형 스타일 */
 @media screen and (max-width: 767px) {
     html {
-        scroll-behavior: auto;
+        /* scroll-behavior: auto; */
     }
     /* 모바일에서는 화면의 80%만 차지하도록 */
     .inner {
